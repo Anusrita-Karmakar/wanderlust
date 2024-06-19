@@ -1,0 +1,33 @@
+<% layout('/layouts/boilerplate') -%>
+<h3 class="col-6 offset-3 mb-4" style="font-weight:600; font-family: Plus Jakarta Sans ">Signup on Wanderlust</h3>
+<div class="row">
+    <div class="col-6 offset-3">
+        <form method="POST" action="/signup" novalidate class="needs-validation">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input name="username" id="username" type="text" class="form-control" required/>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Username is required!</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input name="email" id="email" type="email" class="form-control" required/>
+                <div class="invalid-feedback">Email is required!</div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="password" class="form-label">password</label>
+                <input name="password" id="password" type="password" class="form-control" required/>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Password is required!</div>
+              </div>
+
+              <button class="btn btn-success" style="background-color: #fe424d !important;
+    border: none !important;"> SignUp</button>
+        </form>
+        <br>
+        <p>Already have an account? <a style="color:black;text-decoration: underline;
+  text-decoration-color: black;" href="/login">&nbsp;<b>Login</b></a></p>
+    </div>
+</div>
